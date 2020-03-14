@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
 
-const Header = ({ title, subtitle }) => {
+export default function Header({ title, subtitle }) {
   useEffect(() => document.title = title);
 
   return (
     <header>
-      <h1>{ title }</h1>
-      <h2>{ subtitle }</h2>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
     </header>
   );
-};
-
-export default Header;
+}
